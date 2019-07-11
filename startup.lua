@@ -3,14 +3,7 @@ The OC-OS Startup file. Do not touch unless you
 know what you are doing!
 ]]--
 
-local function getKP()
- while true do
-  os.pullEvent('key')
-  CHB = 1
-  break
- end
-end
-print('Welcome to OC Boot Loader version 0.5.0.')
+print('Welcome to OC Boot Loader version 1.0.0.')
 
 term.write('Enter boot choice [1. CraftOS], [2. OC-OS] :')
 OPT = read()
@@ -25,12 +18,13 @@ else
    log.info('Found required file: OC Bash v0.5.0')
   else
    log.err('Failed to locate required file: /scripts/bash')
-   shell.exit()
+   os.shutdown()
   end
   if fs.exists('/scripts/ocfm') then
    log.info('Found required file: OC File Manager v1.0.0')
   else
    log.err('Failed to locate required file: /scripts/ocfm')
+   os.shutdown()
   end
   if os.version() ~= 'CraftOS 1.8' then
    log.warn('Running on unsupported CraftOS version!')
