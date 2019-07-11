@@ -31,6 +31,7 @@ else
   end
   log.info('Starting Main Menu....')
   shell.setDir('/scripts')
+  sleep(1)
   shell.run('ui')
  else
  print('Invalid boot choice!')
