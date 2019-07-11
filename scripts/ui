@@ -28,15 +28,20 @@ local function menu(m)
 end
 
 local function apps()
- local mnu = {'1. Files   ','2. Appstore','3. Shell   ', '4. Back    '}
+ local mnu = {'1. Files   ','2. Appstore','3. Shell   ', '4. OC Bash ', '5. Back    '}
  local i = menu(mnu)
  if i == 1 then shell.run('ocfm') end
  if i == 2 then
   term.clear()
   print('Not implemented yet!')
  end
- if i == 3 then shell.run('bash') end
- if i == 4 then coroutine.yield() end
+ if i == 3 then
+  term.clear()
+  term.setCursorPos(1,1)
+  shell.run('shell')
+ end
+ if i == 4 then shell.run('bash') end
+ if i == 5 then coroutine.yield() end
 end
 
 local function games()
