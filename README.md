@@ -15,3 +15,17 @@ From there, the script will guide you.
 Or, if you prefer the manual way, you can `git clone` this repo and copy all of the files into your computer's folder.
 
 Have fun!
+
+# Known issues
+
+- OC Bash is still extremely buggy
+
+- To exit the 'Change your computer's name' interface, one must press a key
+
+# To be added
+
+- The Appstore
+
+- More settings
+
+- Support for external apps
