@@ -8,6 +8,7 @@ are contained in this license (hereby referred to as 'TL') as follows:
 a. OC may, at any time, revoke the use of TS by TR if OC deems TR's use of TS unacceptable;*
 
 b. OC is not liable for any instabilities, crashes, or bugs caused by TR running TS on an unsupported system;**
+  b.1. OC is not liable for and instabilities, crashes, or bugs caused due to unofficial modifications made by TR to TR's copy of the source code;
 
 c. TR may use TS in their project, so long as a copy of this license is included in TR's source code;
 
