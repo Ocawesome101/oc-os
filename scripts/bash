@@ -1,11 +1,13 @@
 -- Some of Bash, implemented rather poorly in Lua --
 term.clear()
+print('WARNING: OC BASH IS STILL INCOMPLETE AND VERY BUGGY')
 while true do
  term.write('user@pc: '..shell.dir()..'$ ')
  local cmd = read()
 
  if cmd == 'help' then
   print('OC-Bash - Bash reimplemented in Lua.')
+  print('WARNING: OC BASH IS INCOMPLETE AND EXTREMELY BUGGY')
   print('Available commands are:')
   print('nano | ls | mkdir | cd | rm | file | poweroff | reboot | exit')
   print('Commands should be input as single words. A command such as nano or mkdir will prompt you for additional arguments.')
