@@ -1,4 +1,4 @@
--- The UI for OC-OS --
+-- The UI for CC-OS --
 -- A TON of functions --
 local function menu(m)
  local i = 1
@@ -7,7 +7,7 @@ local function menu(m)
  while true do
   term.clear()
   term.setCursorPos(ctr - 5, 7)
-  print('OC-OS MENU')
+  print('CC-OS MENU')
   for x = 1, #m, 1 do
    xpos = ctr - (string.len(m[x])*0.6)
    term.setCursorPos(xpos, x + 10)
