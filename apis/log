@@ -1,4 +1,4 @@
--- A simple logging API --
+-- A simple logging API. Useful. --
 
 function info(msg)
  term.write('[ ')
